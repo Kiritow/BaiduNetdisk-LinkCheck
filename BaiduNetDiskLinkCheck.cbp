@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="BaiduNetDiskLinkCheck" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/BaiduNetDiskLinkCheck" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/BaiduNetDiskLinkCheck" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="CurlWrapper/include" />
+		</Compiler>
+		<Linker>
+			<Add library="CurlWrapper/lib/x86/libcurl.lib" />
+		</Linker>
+		<Unit filename="CurlWrapper/include/NetworkWrapper.h" />
+		<Unit filename="CurlWrapper/include/curl/curl.h" />
+		<Unit filename="CurlWrapper/include/curl/curlver.h" />
+		<Unit filename="CurlWrapper/include/curl/easy.h" />
+		<Unit filename="CurlWrapper/include/curl/mprintf.h" />
+		<Unit filename="CurlWrapper/include/curl/multi.h" />
+		<Unit filename="CurlWrapper/include/curl/stdcheaders.h" />
+		<Unit filename="CurlWrapper/include/curl/system.h" />
+		<Unit filename="CurlWrapper/include/curl/typecheck-gcc.h" />
+		<Unit filename="CurlWrapper/src/NetworkWrapper.cpp" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

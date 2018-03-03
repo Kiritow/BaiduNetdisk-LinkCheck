@@ -1,0 +1,14 @@
+{
+    "ValidContent" : "百度网盘-分享无限制",
+    "ErrorContent" : [
+        {
+            "name":"Link outdated",
+            "content":"<title>百度网盘-链接已失效</title>"
+        },
+        {
+            "name":"Link not exist",
+            "content":"<title>百度网盘-链接不存在</title>"
+        }
+    ],
+    "UnknownContent": "<title>百度网盘 请输入提取密码</title>"
+}
